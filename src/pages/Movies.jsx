@@ -5,10 +5,11 @@ import { fetchMovies, getGenres } from '../store';
 import { onAuthStateChanged } from 'firebase/auth';
 import { firebaseAuth } from '../utils/firebase-config';
 import styled from 'styled-components';
-import Navbar from '../components/NavBar';
+import NavBar from "../components/NavBar";
 import Slider from '../components/Slider';
 import NotAvailable from '../components/NotAvailable';
 import SelectGenre from '../components/SelectGenre';
+
 
 export default function Movies() {
 
@@ -45,7 +46,7 @@ export default function Movies() {
   return <Container>
 
             <div className="navbar">
-                <Navbar isScrolled={isScrolled}/>
+                <NavBar isScrolled={isScrolled}/>
             </div>
            
             <div className="data">

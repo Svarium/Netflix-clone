@@ -12,7 +12,7 @@ import { fetchMovies, getGenres } from "../store";
 import { FaPlay } from "react-icons/fa";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import Slider from "../components/Slider";
-import Navbar from "../components/NavBar";
+import NavBar from "../components/NavBar";
 function Netflix() {
   const [isScrolled, setIsScrolled] = useState(false);
   const movies = useSelector((state) => state.netflix.movies);
@@ -43,7 +43,7 @@ function Netflix() {
 
   return (
     <Container>
-      <Navbar isScrolled={isScrolled} />
+      <NavBar isScrolled={isScrolled} />
       <div className="hero">
         <img
           src={backgroundImage}
