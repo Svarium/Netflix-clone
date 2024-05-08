@@ -1,6 +1,5 @@
 {
-  "name": "netflix-ui",
-  "homepage": "https://svarium.github.io/Netflix-clone",
+  "name": "netflix-ui",  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
